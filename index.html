@@ -6,39 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/index.css">
+    <style>
+        .parent-flex{
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.parent-flex>div{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background: lightgreen;
+    flex-wrap: wrap;
+    
+}
+    </style>
 </head>
 <body>
-    
-    <table>
-        <thead>
-            <th>State of health</th>
-            <th colspan="2">Fasting value</th>
-            <th>After Remaining</th>
-
-            <tr>
-                <th> </th>
-                <th>Minimum </th>
-                <th>Normal</th>
-                <th>2 hour of eating</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Healthy</td>
-                <td>70</td>
-                <td>100</td>
-                <td>Less than 140</td></tr>
-            <tr><td>Pre-diabetes</td>
-                <td>101</td>
-                <td>126</td>
-                <td>140 to 200</td></tr>
-            <tr>
-                <td>Diabetes</td>
-                <td>more than 126</td>
-                <td>Not applicable</td>
-                <td>More than 200</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="parent-flex">
+        <div class="child-1"></div>
+        <div class="child-2">two</div>
+        <div class="child-3">three</div>
+        <div class="child-4">four</div>
+        
+        
+    </div>
 <script src="script.js"></script>    
 </body>
 </html>
